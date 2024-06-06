@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  custom-docker-fluent-logger:
+    image: ilm-logger:latest
+    volumes:
+      - ./log:/fluentd/log
+      - ./fluent.conf:/fluentd/etc/fluent.conf
+
+networks:
+  fluentd_network:

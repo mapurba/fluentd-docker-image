@@ -1,0 +1,484 @@
+WARN  [2024-06-05 20:59:04.647] [org.glassfish.jersey.internal.Errors] The following warnings have been detected: WARNING: The (sub)resource method readScheduler in com.microfocus.validator.resources.SchedulerEndpoints contains empty path annotation.
+WARNING: The (sub)resource method writeScheduler in com.microfocus.validator.resources.SchedulerEndpoints contains empty path annotation.
+
+INFO  [2024-06-05 20:59:04.649] [org.eclipse.jetty.server.handler.ContextHandler] Started i.d.j.MutableServletContextHandler@29b2a94c{/,null,AVAILABLE}
+INFO  [2024-06-05 20:59:04.656] [io.dropwizard.setup.AdminEnvironment] tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2024-06-05 20:59:04.656] [org.eclipse.jetty.server.handler.ContextHandler] Started i.d.j.MutableServletContextHandler@73d7e7aa{/,null,AVAILABLE}
+INFO  [2024-06-05 20:59:04.673] [org.eclipse.jetty.server.AbstractConnector] Started application@7c460{SSL, (ssl, http/1.1)}{0.0.0.0:8380}
+INFO  [2024-06-05 20:59:04.676] [org.eclipse.jetty.server.AbstractConnector] Started admin@59e4a044{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+INFO  [2024-06-05 20:59:04.677] [org.eclipse.jetty.server.Server] Started @4063ms
+INFO  [2024-06-05 20:59:30.949] [org.eclipse.jetty.server.AbstractConnector] Stopped application@7c460{SSL, (ssl, http/1.1)}{0.0.0.0:8380}
+INFO  [2024-06-05 20:59:30.951] [org.eclipse.jetty.server.AbstractConnector] Stopped admin@59e4a044{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+INFO  [2024-06-05 20:59:30.951] [org.eclipse.jetty.server.handler.ContextHandler] Stopped i.d.j.MutableServletContextHandler@73d7e7aa{/,null,STOPPED}
+INFO  [2024-06-05 20:59:30.954] [org.eclipse.jetty.server.handler.ContextHandler] Stopped i.d.j.MutableServletContextHandler@29b2a94c{/,null,STOPPED}
+INFO  [2024-06-05 20:59:33.110] [org.eclipse.jetty.util.log] Logging initialized @1143ms to org.eclipse.jetty.util.log.Slf4jLog
+INFO  [2024-06-05 20:59:33.151] [io.dropwizard.server.DefaultServerFactory] Registering jersey handler with root path prefix: /
+INFO  [2024-06-05 20:59:33.152] [io.dropwizard.server.DefaultServerFactory] Registering admin handler with root path prefix: /
+INFO  [2024-06-05 20:59:33.154] [io.dropwizard.assets.AssetsBundle] Registering AssetBundle with name: swagger-assets for path /api/validator/v1/swagger-static/*
+INFO  [2024-06-05 20:59:33.154] [io.dropwizard.assets.AssetsBundle] Registering AssetBundle with name: swagger-oauth2-connect for path /api/validator/v1/oauth2-redirect.html/*
+INFO  [2024-06-05 20:59:33.233] [org.reflections.Reflections] Reflections took 61 ms to scan 1 urls, producing 38 keys and 66 values 
+INFO  [2024-06-05 20:59:33.562] [io.dropwizard.assets.AssetsBundle] Registering AssetBundle with name: assets for path /validator/*
+INFO  [2024-06-05 20:59:33.726] [org.hibernate.Version] HHH000412: Hibernate ORM core version 2.0.1.0100-SNAPSHOT
+INFO  [2024-06-05 20:59:33.791] [io.dropwizard.hibernate.SessionFactoryFactory] Entity classes: [com.microfocus.validator.jdbc.model.User]
+INFO  [2024-06-05 20:59:33.810] [org.hibernate.annotations.common.Version] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+INFO  [2024-06-05 20:59:34.065] [org.hibernate.dialect.Dialect] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+INFO  [2024-06-05 20:59:34.710] [org.hibernate.engine.internal.StatisticalLoggingSessionEventListener] Session Metrics {
+    47300 nanoseconds spent acquiring 1 JDBC connections;
+    27300 nanoseconds spent releasing 1 JDBC connections;
+    6605500 nanoseconds spent preparing 1 JDBC statements;
+    555800 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    13219000 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    17100 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+INFO  [2024-06-05 20:59:34.866] [io.dropwizard.server.ServerFactory] Starting Validator
+            
+ \ \ / /  __ _  | | (_)  __| |  __ _  | |_   ___   _ _ 
+  \ V /  / _` | | | | | / _` | / _` | |  _| / _ \ | '_|
+   \_/   \__,_| |_| |_| \__,_| \__,_|  \__| \___/ |_| 
+INFO  [2024-06-05 20:59:34.928] [org.eclipse.jetty.setuid.SetUIDListener] Opened application@31fc658f{SSL, (ssl, http/1.1)}{0.0.0.0:8380}
+INFO  [2024-06-05 20:59:34.928] [org.eclipse.jetty.setuid.SetUIDListener] Opened admin@60d32006{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+INFO  [2024-06-05 20:59:34.954] [io.dropwizard.websockets.WebsocketBundle] Registering websocket endpoints: 
+
+    WS      /api/socket/{projectId} (com.microfocus.validator.resources.WebsocketServerEndpoint)
+
+INFO  [2024-06-05 20:59:34.956] [org.eclipse.jetty.server.Server] jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 11.0.20.1+1
+INFO  [2024-06-05 20:59:34.978] [org.eclipse.jetty.util.ssl.SslContextFactory] x509=X509@cbc3bf3(validator,h=[localhost],a=[],w=[]) for Server@52d01430[provider=null,keyStore=file:///A:/github/Validator/keystore/validator.keystore,trustStore=file:///A:/github/Validator/keystore/truststore]
+INFO  [2024-06-05 20:59:35.015] [io.dropwizard.jetty.HttpsConnectorFactory] Enabled protocols: [TLSv1.2, TLSv1.3]
+INFO  [2024-06-05 20:59:35.016] [io.dropwizard.jetty.HttpsConnectorFactory] Disabled protocols: [SSLv2Hello, SSLv3, TLSv1, TLSv1.1]
+INFO  [2024-06-05 20:59:35.016] [io.dropwizard.jetty.HttpsConnectorFactory] Enabled cipher suites: [TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384, TLS_CHACHA20_POLY1305_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+INFO  [2024-06-05 20:59:35.016] [io.dropwizard.jetty.HttpsConnectorFactory] Disabled cipher suites: [TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_256_GCM_SHA384]
+INFO  [2024-06-05 20:59:35.395] [io.dropwizard.jersey.DropwizardResourceConfig] The following paths were found for the configured resources:
+
+    POST    /api/validator/v1/data/encrypt (com.microfocus.validator.resources.ConnectionService)
+    POST    /api/validator/v1/license/check (com.microfocus.validator.resources.LicenseEndPoints)
+    GET     /api/validator/v1/license/info (com.microfocus.validator.resources.LicenseEndPoints)
+    POST    /api/validator/v1/people (com.microfocus.validator.resources.PeopleResource)
+    DELETE  /api/validator/v1/people/me (com.microfocus.validator.resources.PeopleResource)
+    PUT     /api/validator/v1/people/me (com.microfocus.validator.resources.PeopleResource)
+    GET     /api/validator/v1/people/me/{name} (com.microfocus.validator.resources.PeopleResource)
+    GET     /api/validator/v1/reports/{filePath: .+} (com.microfocus.validator.resources.ReportService)
+    GET     /api/validator/v1/scheduler (com.microfocus.validator.resources.SchedulerEndpoints)
+    PUT     /api/validator/v1/scheduler (com.microfocus.validator.resources.SchedulerEndpoints)
+    GET     /api/validator/v1/scheduler/autostart (com.microfocus.validator.resources.SchedulerEndpoints)
+    PUT     /api/validator/v1/scheduler/autostart (com.microfocus.validator.resources.SchedulerEndpoints)
+    GET     /api/validator/v1/scheduler/notifier (com.microfocus.validator.resources.SchedulerEndpoints)
+    PUT     /api/validator/v1/scheduler/notifier (com.microfocus.validator.resources.SchedulerEndpoints)
+    GET     /api/validator/v1/scheduler/run/{scheduleId} (com.microfocus.validator.resources.SchedulerEndpoints)
+    DELETE  /api/validator/v1/scheduler/schedules (com.microfocus.validator.resources.SchedulerEndpoints)
+    GET     /api/validator/v1/scheduler/schedules (com.microfocus.validator.resources.SchedulerEndpoints)
+    POST    /api/validator/v1/scheduler/schedules (com.microfocus.validator.resources.SchedulerEndpoints)
+    GET     /api/validator/v1/scheduler/schedules/{id} (com.microfocus.validator.resources.SchedulerEndpoints)
+    PUT     /api/validator/v1/scheduler/schedules/{id} (com.microfocus.validator.resources.SchedulerEndpoints)
+    GET     /api/validator/v1/scheduler/smtp/send (com.microfocus.validator.resources.SchedulerEndpoints)
+    GET     /api/validator/v1/scheduler/start (com.microfocus.validator.resources.SchedulerEndpoints)
+    GET     /api/validator/v1/scheduler/status (com.microfocus.validator.resources.SchedulerEndpoints)
+    GET     /api/validator/v1/scheduler/stop (com.microfocus.validator.resources.SchedulerEndpoints)
+    GET     /api/validator/v1/schema (com.microfocus.validator.resources.ValidatorSchemaService)
+    GET     /api/validator/v1/swagger (io.federecio.dropwizard.swagger.SwaggerResource)
+    GET     /api/validator/v1/swagger.{type:json|yaml} (io.swagger.jaxrs.listing.ApiListingResource)
+    DELETE  /api/validator/v1/template (com.microfocus.validator.resources.ValidatorTemplateService)
+    GET     /api/validator/v1/template (com.microfocus.validator.resources.ValidatorTemplateService)
+    GET     /api/validator/v1/template/{id} (com.microfocus.validator.resources.ValidatorTemplateService)
+    POST    /api/validator/v1/template/{id} (com.microfocus.validator.resources.ValidatorTemplateService)
+    DELETE  /api/validator/v1/testsuite (com.microfocus.validator.resources.TestSuiteService)
+    GET     /api/validator/v1/testsuite (com.microfocus.validator.resources.TestSuiteService)
+    POST    /api/validator/v1/testsuite/{filePath: .+}/idmconnections (com.microfocus.validator.resources.ConnectionService)
+    DELETE  /api/validator/v1/testsuite/{filePath: .+}/log (com.microfocus.validator.resources.TestService)
+    GET     /api/validator/v1/testsuite/{filePath: .+}/log (com.microfocus.validator.resources.TestService)
+    GET     /api/validator/v1/testsuite/{filePath: .+}/{connectionId}/query (com.microfocus.validator.resources.ConnectionService)
+    GET     /api/validator/v1/testsuite/{filePath: .+}/{connectionid}/testconnection (com.microfocus.validator.resources.ConnectionService)
+    GET     /api/validator/v1/testsuite/{filePath: .+}/{enviroment}/run (com.microfocus.validator.resources.TestService)
+    GET     /api/validator/v1/testsuite/{filePath: .+}/{testId}/status (com.microfocus.validator.resources.TestService)
+    GET     /api/validator/v1/testsuite/{id} (com.microfocus.validator.resources.TestSuiteService)
+    POST    /api/validator/v1/testsuite/{id} (com.microfocus.validator.resources.TestSuiteService)
+    PUT     /api/validator/v1/testsuite/{id} (com.microfocus.validator.resources.TestSuiteService)
+    DELETE  /api/validator/v1/testsuite/{id}/connection (com.microfocus.validator.resources.ConnectionService)
+    POST    /api/validator/v1/testsuite/{id}/connection (com.microfocus.validator.resources.ConnectionService)
+    PUT     /api/validator/v1/testsuite/{id}/connection (com.microfocus.validator.resources.ConnectionService)
+    GET     /api/validator/v1/testsuite/{id}/connections (com.microfocus.validator.resources.ConnectionService)
+    GET     /api/validator/v1/testsuite/{id}/javascript (com.microfocus.validator.resources.ConnectionService)
+    PUT     /api/validator/v1/testsuite/{id}/javascript (com.microfocus.validator.resources.ConnectionService)
+    GET     /api/validator/v1/testsuite/{id}/runJavascript (com.microfocus.validator.resources.ConnectionService)
+    DELETE  /api/validator/v1/testsuite/{id}/tests (com.microfocus.validator.resources.TestService)
+    GET     /api/validator/v1/testsuite/{id}/tests (com.microfocus.validator.resources.TestService)
+    POST    /api/validator/v1/testsuite/{id}/tests (com.microfocus.validator.resources.TestService)
+    PUT     /api/validator/v1/testsuite/{id}/tests (com.microfocus.validator.resources.TestService)
+    GET     /api/validator/v1/testsuite/{id}/variables (com.microfocus.validator.resources.ConnectionService)
+    PUT     /api/validator/v1/testsuite/{id}/variables (com.microfocus.validator.resources.ConnectionService)
+    GET     /api/validator/v1/testsuite/{id}/{connectionid}/schema/classes (com.microfocus.validator.resources.ConnectionService)
+    GET     /api/validator/v1/testsuite/{id}/{connectionid}/schema/{classname}/attributes (com.microfocus.validator.resources.ConnectionService)
+    POST    /api/validator/v1/user/login (com.microfocus.validator.resources.SessionService)
+    GET     /api/validator/v1/user/logout (com.microfocus.validator.resources.SessionService)
+    POST    /api/validator/v1/ws/pollLogs (com.microfocus.validator.resources.LoggingServies)
+
+WARN  [2024-06-05 20:59:04.647] [org.glassfish.jersey.internal.Errors] The following warnings have been detected: WARNING: The (sub)resource method readScheduler in com.microfocus.validator.resources.SchedulerEndpoints contains empty path annotation.
+WARNING: The (sub)resource method writeScheduler in com.microfocus.validator.resources.SchedulerEndpoints contains empty path annotation.
+
+INFO  [2024-06-05 20:59:04.649] [org.eclipse.jetty.server.handler.ContextHandler] Started i.d.j.MutableServletContextHandler@29b2a94c{/,null,AVAILABLE}
+INFO  [2024-06-05 20:59:04.656] [io.dropwizard.setup.AdminEnvironment] tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2024-06-05 20:59:04.656] [org.eclipse.jetty.server.handler.ContextHandler] Started i.d.j.MutableServletContextHandler@73d7e7aa{/,null,AVAILABLE}
+INFO  [2024-06-05 20:59:04.673] [org.eclipse.jetty.server.AbstractConnector] Started application@7c460{SSL, (ssl, http/1.1)}{0.0.0.0:8380}
+INFO  [2024-06-05 20:59:04.676] [org.eclipse.jetty.server.AbstractConnector] Started admin@59e4a044{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+INFO  [2024-06-05 20:59:04.677] [org.eclipse.jetty.server.Server] Started @4063ms
+INFO  [2024-06-05 20:59:30.949] [org.eclipse.jetty.server.AbstractConnector] Stopped application@7c460{SSL, (ssl, http/1.1)}{0.0.0.0:8380}
+INFO  [2024-06-05 20:59:30.951] [org.eclipse.jetty.server.AbstractConnector] Stopped admin@59e4a044{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+INFO  [2024-06-05 20:59:30.951] [org.eclipse.jetty.server.handler.ContextHandler] Stopped i.d.j.MutableServletContextHandler@73d7e7aa{/,null,STOPPED}
+INFO  [2024-06-05 20:59:30.954] [org.eclipse.jetty.server.handler.ContextHandler] Stopped i.d.j.MutableServletContextHandler@29b2a94c{/,null,STOPPED}
+INFO  [2024-06-05 20:59:33.110] [org.eclipse.jetty.util.log] Logging initialized @1143ms to org.eclipse.jetty.util.log.Slf4jLog
+INFO  [2024-06-05 20:59:33.151] [io.dropwizard.server.DefaultServerFactory] Registering jersey handler with root path prefix: /
+INFO  [2024-06-05 20:59:33.152] [io.dropwizard.server.DefaultServerFactory] Registering admin handler with root path prefix: /
+INFO  [2024-06-05 20:59:33.154] [io.dropwizard.assets.AssetsBundle] Registering AssetBundle with name: swagger-assets for path /api/validator/v1/swagger-static/*
+INFO  [2024-06-05 20:59:33.154] [io.dropwizard.assets.AssetsBundle] Registering AssetBundle with name: swagger-oauth2-connect for path /api/validator/v1/oauth2-redirect.html/*
+INFO  [2024-06-05 20:59:33.233] [org.reflections.Reflections] Reflections took 61 ms to scan 1 urls, producing 38 keys and 66 values 
+INFO  [2024-06-05 20:59:33.562] [io.dropwizard.assets.AssetsBundle] Registering AssetBundle with name: assets for path /validator/*
+INFO  [2024-06-05 20:59:33.726] [org.hibernate.Version] HHH000412: Hibernate ORM core version 2.0.1.0100-SNAPSHOT
+INFO  [2024-06-05 20:59:33.791] [io.dropwizard.hibernate.SessionFactoryFactory] Entity classes: [com.microfocus.validator.jdbc.model.User]
+INFO  [2024-06-05 20:59:33.810] [org.hibernate.annotations.common.Version] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+INFO  [2024-06-05 20:59:34.065] [org.hibernate.dialect.Dialect] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+INFO  [2024-06-05 20:59:34.710] [org.hibernate.engine.internal.StatisticalLoggingSessionEventListener] Session Metrics {
+    47300 nanoseconds spent acquiring 1 JDBC connections;
+    27300 nanoseconds spent releasing 1 JDBC connections;
+    6605500 nanoseconds spent preparing 1 JDBC statements;
+    555800 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    13219000 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    17100 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+INFO  [2024-06-05 20:59:34.866] [io.dropwizard.server.ServerFactory] Starting Validator
+            
+ \ \ / /  __ _  | | (_)  __| |  __ _  | |_   ___   _ _ 
+  \ V /  / _` | | | | | / _` | / _` | |  _| / _ \ | '_|
+   \_/   \__,_| |_| |_| \__,_| \__,_|  \__| \___/ |_| 
+INFO  [2024-06-05 20:59:34.928] [org.eclipse.jetty.setuid.SetUIDListener] Opened application@31fc658f{SSL, (ssl, http/1.1)}{0.0.0.0:8380}
+INFO  [2024-06-05 20:59:34.928] [org.eclipse.jetty.setuid.SetUIDListener] Opened admin@60d32006{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+INFO  [2024-06-05 20:59:34.954] [io.dropwizard.websockets.WebsocketBundle] Registering websocket endpoints: 
+
+    WS      /api/socket/{projectId} (com.microfocus.validator.resources.WebsocketServerEndpoint)
+
+INFO  [2024-06-05 20:59:34.956] [org.eclipse.jetty.server.Server] jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 11.0.20.1+1
+INFO  [2024-06-05 20:59:34.978] [org.eclipse.jetty.util.ssl.SslContextFactory] x509=X509@cbc3bf3(validator,h=[localhost],a=[],w=[]) for Server@52d01430[provider=null,keyStore=file:///A:/github/Validator/keystore/validator.keystore,trustStore=file:///A:/github/Validator/keystore/truststore]
+INFO  [2024-06-05 20:59:35.015] [io.dropwizard.jetty.HttpsConnectorFactory] Enabled protocols: [TLSv1.2, TLSv1.3]
+INFO  [2024-06-05 20:59:35.016] [io.dropwizard.jetty.HttpsConnectorFactory] Disabled protocols: [SSLv2Hello, SSLv3, TLSv1, TLSv1.1]
+INFO  [2024-06-05 20:59:35.016] [io.dropwizard.jetty.HttpsConnectorFactory] Enabled cipher suites: [TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384, TLS_CHACHA20_POLY1305_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+INFO  [2024-06-05 20:59:35.016] [io.dropwizard.jetty.HttpsConnectorFactory] Disabled cipher suites: [TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_256_GCM_SHA384]
+INFO  [2024-06-05 20:59:35.395] [io.dropwizard.jersey.DropwizardResourceConfig] The following paths were found for the configured resources:
+
+    POST    /api/validator/v1/data/encrypt (com.microfocus.validator.resources.ConnectionService)
+    POST    /api/validator/v1/license/check (com.microfocus.validator.resources.LicenseEndPoints)
+    GET     /api/validator/v1/license/info (com.microfocus.validator.resources.LicenseEndPoints)
+    POST    /api/validator/v1/people (com.microfocus.validator.resources.PeopleResource)
+    DELETE  /api/validator/v1/people/me (com.microfocus.validator.resources.PeopleResource)
+    PUT     /api/validator/v1/people/me (com.microfocus.validator.resources.PeopleResource)
+    GET     /api/validator/v1/people/me/{name} (com.microfocus.validator.resources.PeopleResource)
+    GET     /api/validator/v1/reports/{filePath: .+} (com.microfocus.validator.resources.ReportService)
+    GET     /api/validator/v1/scheduler (com.microfocus.validator.resources.SchedulerEndpoints)
+    PUT     /api/validator/v1/scheduler (com.microfocus.validator.resources.SchedulerEndpoints)
+    GET     /api/validator/v1/scheduler/autostart (com.microfocus.validator.resources.SchedulerEndpoints)
+    PUT     /api/validator/v1/scheduler/autostart (com.microfocus.validator.resources.SchedulerEndpoints)
+    GET     /api/validator/v1/scheduler/notifier (com.microfocus.validator.resources.SchedulerEndpoints)
+    PUT     /api/validator/v1/scheduler/notifier (com.microfocus.validator.resources.SchedulerEndpoints)
+    GET     /api/validator/v1/scheduler/run/{scheduleId} (com.microfocus.validator.resources.SchedulerEndpoints)
+    DELETE  /api/validator/v1/scheduler/schedules (com.microfocus.validator.resources.SchedulerEndpoints)
+    GET     /api/validator/v1/scheduler/schedules (com.microfocus.validator.resources.SchedulerEndpoints)
+    POST    /api/validator/v1/scheduler/schedules (com.microfocus.validator.resources.SchedulerEndpoints)
+    GET     /api/validator/v1/scheduler/schedules/{id} (com.microfocus.validator.resources.SchedulerEndpoints)
+    PUT     /api/validator/v1/scheduler/schedules/{id} (com.microfocus.validator.resources.SchedulerEndpoints)
+    GET     /api/validator/v1/scheduler/smtp/send (com.microfocus.validator.resources.SchedulerEndpoints)
+    GET     /api/validator/v1/scheduler/start (com.microfocus.validator.resources.SchedulerEndpoints)
+    GET     /api/validator/v1/scheduler/status (com.microfocus.validator.resources.SchedulerEndpoints)
+    GET     /api/validator/v1/scheduler/stop (com.microfocus.validator.resources.SchedulerEndpoints)
+    GET     /api/validator/v1/schema (com.microfocus.validator.resources.ValidatorSchemaService)
+    GET     /api/validator/v1/swagger (io.federecio.dropwizard.swagger.SwaggerResource)
+    GET     /api/validator/v1/swagger.{type:json|yaml} (io.swagger.jaxrs.listing.ApiListingResource)
+    DELETE  /api/validator/v1/template (com.microfocus.validator.resources.ValidatorTemplateService)
+    GET     /api/validator/v1/template (com.microfocus.validator.resources.ValidatorTemplateService)
+    GET     /api/validator/v1/template/{id} (com.microfocus.validator.resources.ValidatorTemplateService)
+    POST    /api/validator/v1/template/{id} (com.microfocus.validator.resources.ValidatorTemplateService)
+    DELETE  /api/validator/v1/testsuite (com.microfocus.validator.resources.TestSuiteService)
+    GET     /api/validator/v1/testsuite (com.microfocus.validator.resources.TestSuiteService)
+    POST    /api/validator/v1/testsuite/{filePath: .+}/idmconnections (com.microfocus.validator.resources.ConnectionService)
+    DELETE  /api/validator/v1/testsuite/{filePath: .+}/log (com.microfocus.validator.resources.TestService)
+    GET     /api/validator/v1/testsuite/{filePath: .+}/log (com.microfocus.validator.resources.TestService)
+    GET     /api/validator/v1/testsuite/{filePath: .+}/{connectionId}/query (com.microfocus.validator.resources.ConnectionService)
+    GET     /api/validator/v1/testsuite/{filePath: .+}/{connectionid}/testconnection (com.microfocus.validator.resources.ConnectionService)
+    GET     /api/validator/v1/testsuite/{filePath: .+}/{enviroment}/run (com.microfocus.validator.resources.TestService)
+    GET     /api/validator/v1/testsuite/{filePath: .+}/{testId}/status (com.microfocus.validator.resources.TestService)
+    GET     /api/validator/v1/testsuite/{id} (com.microfocus.validator.resources.TestSuiteService)
+    POST    /api/validator/v1/testsuite/{id} (com.microfocus.validator.resources.TestSuiteService)
+    PUT     /api/validator/v1/testsuite/{id} (com.microfocus.validator.resources.TestSuiteService)
+    DELETE  /api/validator/v1/testsuite/{id}/connection (com.microfocus.validator.resources.ConnectionService)
+    POST    /api/validator/v1/testsuite/{id}/connection (com.microfocus.validator.resources.ConnectionService)
+    PUT     /api/validator/v1/testsuite/{id}/connection (com.microfocus.validator.resources.ConnectionService)
+    GET     /api/validator/v1/testsuite/{id}/connections (com.microfocus.validator.resources.ConnectionService)
+    GET     /api/validator/v1/testsuite/{id}/javascript (com.microfocus.validator.resources.ConnectionService)
+    PUT     /api/validator/v1/testsuite/{id}/javascript (com.microfocus.validator.resources.ConnectionService)
+    GET     /api/validator/v1/testsuite/{id}/runJavascript (com.microfocus.validator.resources.ConnectionService)
+    DELETE  /api/validator/v1/testsuite/{id}/tests (com.microfocus.validator.resources.TestService)
+    GET     /api/validator/v1/testsuite/{id}/tests (com.microfocus.validator.resources.TestService)
+    POST    /api/validator/v1/testsuite/{id}/tests (com.microfocus.validator.resources.TestService)
+    PUT     /api/validator/v1/testsuite/{id}/tests (com.microfocus.validator.resources.TestService)
+    GET     /api/validator/v1/testsuite/{id}/variables (com.microfocus.validator.resources.ConnectionService)
+    PUT     /api/validator/v1/testsuite/{id}/variables (com.microfocus.validator.resources.ConnectionService)
+    GET     /api/validator/v1/testsuite/{id}/{connectionid}/schema/classes (com.microfocus.validator.resources.ConnectionService)
+    GET     /api/validator/v1/testsuite/{id}/{connectionid}/schema/{classname}/attributes (com.microfocus.validator.resources.ConnectionService)
+    POST    /api/validator/v1/user/login (com.microfocus.validator.resources.SessionService)
+    GET     /api/validator/v1/user/logout (com.microfocus.validator.resources.SessionService)
+    POST    /api/validator/v1/ws/pollLogs (com.microfocus.validator.resources.LoggingServies)
+
+WARN  [2024-06-05 20:59:04.647] [org.glassfish.jersey.internal.Errors] The following warnings have been detected: WARNING: The (sub)resource method readScheduler in com.microfocus.validator.resources.SchedulerEndpoints contains empty path annotation.
+WARNING: The (sub)resource method writeScheduler in com.microfocus.validator.resources.SchedulerEndpoints contains empty path annotation.
+
+INFO  [2024-06-05 20:59:04.649] [org.eclipse.jetty.server.handler.ContextHandler] Started i.d.j.MutableServletContextHandler@29b2a94c{/,null,AVAILABLE}
+INFO  [2024-06-05 20:59:04.656] [io.dropwizard.setup.AdminEnvironment] tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2024-06-05 20:59:04.656] [org.eclipse.jetty.server.handler.ContextHandler] Started i.d.j.MutableServletContextHandler@73d7e7aa{/,null,AVAILABLE}
+INFO  [2024-06-05 20:59:04.673] [org.eclipse.jetty.server.AbstractConnector] Started application@7c460{SSL, (ssl, http/1.1)}{0.0.0.0:8380}
+INFO  [2024-06-05 20:59:04.676] [org.eclipse.jetty.server.AbstractConnector] Started admin@59e4a044{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+INFO  [2024-06-05 20:59:04.677] [org.eclipse.jetty.server.Server] Started @4063ms
+INFO  [2024-06-05 20:59:30.949] [org.eclipse.jetty.server.AbstractConnector] Stopped application@7c460{SSL, (ssl, http/1.1)}{0.0.0.0:8380}
+INFO  [2024-06-05 20:59:30.951] [org.eclipse.jetty.server.AbstractConnector] Stopped admin@59e4a044{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+INFO  [2024-06-05 20:59:30.951] [org.eclipse.jetty.server.handler.ContextHandler] Stopped i.d.j.MutableServletContextHandler@73d7e7aa{/,null,STOPPED}
+INFO  [2024-06-05 20:59:30.954] [org.eclipse.jetty.server.handler.ContextHandler] Stopped i.d.j.MutableServletContextHandler@29b2a94c{/,null,STOPPED}
+INFO  [2024-06-05 20:59:33.110] [org.eclipse.jetty.util.log] Logging initialized @1143ms to org.eclipse.jetty.util.log.Slf4jLog
+INFO  [2024-06-05 20:59:33.151] [io.dropwizard.server.DefaultServerFactory] Registering jersey handler with root path prefix: /
+INFO  [2024-06-05 20:59:33.152] [io.dropwizard.server.DefaultServerFactory] Registering admin handler with root path prefix: /
+INFO  [2024-06-05 20:59:33.154] [io.dropwizard.assets.AssetsBundle] Registering AssetBundle with name: swagger-assets for path /api/validator/v1/swagger-static/*
+INFO  [2024-06-05 20:59:33.154] [io.dropwizard.assets.AssetsBundle] Registering AssetBundle with name: swagger-oauth2-connect for path /api/validator/v1/oauth2-redirect.html/*
+INFO  [2024-06-05 20:59:33.233] [org.reflections.Reflections] Reflections took 61 ms to scan 1 urls, producing 38 keys and 66 values 
+INFO  [2024-06-05 20:59:33.562] [io.dropwizard.assets.AssetsBundle] Registering AssetBundle with name: assets for path /validator/*
+INFO  [2024-06-05 20:59:33.726] [org.hibernate.Version] HHH000412: Hibernate ORM core version 2.0.1.0100-SNAPSHOT
+INFO  [2024-06-05 20:59:33.791] [io.dropwizard.hibernate.SessionFactoryFactory] Entity classes: [com.microfocus.validator.jdbc.model.User]
+INFO  [2024-06-05 20:59:33.810] [org.hibernate.annotations.common.Version] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+INFO  [2024-06-05 20:59:34.065] [org.hibernate.dialect.Dialect] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+INFO  [2024-06-05 20:59:34.710] [org.hibernate.engine.internal.StatisticalLoggingSessionEventListener] Session Metrics {
+    47300 nanoseconds spent acquiring 1 JDBC connections;
+    27300 nanoseconds spent releasing 1 JDBC connections;
+    6605500 nanoseconds spent preparing 1 JDBC statements;
+    555800 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    13219000 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    17100 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+INFO  [2024-06-05 20:59:34.866] [io.dropwizard.server.ServerFactory] Starting Validator
+            
+ \ \ / /  __ _  | | (_)  __| |  __ _  | |_   ___   _ _ 
+  \ V /  / _` | | | | | / _` | / _` | |  _| / _ \ | '_|
+   \_/   \__,_| |_| |_| \__,_| \__,_|  \__| \___/ |_| 
+INFO  [2024-06-05 20:59:34.928] [org.eclipse.jetty.setuid.SetUIDListener] Opened application@31fc658f{SSL, (ssl, http/1.1)}{0.0.0.0:8380}
+INFO  [2024-06-05 20:59:34.928] [org.eclipse.jetty.setuid.SetUIDListener] Opened admin@60d32006{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+INFO  [2024-06-05 20:59:34.954] [io.dropwizard.websockets.WebsocketBundle] Registering websocket endpoints: 
+
+    WS      /api/socket/{projectId} (com.microfocus.validator.resources.WebsocketServerEndpoint)
+
+INFO  [2024-06-05 20:59:34.956] [org.eclipse.jetty.server.Server] jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 11.0.20.1+1
+INFO  [2024-06-05 20:59:34.978] [org.eclipse.jetty.util.ssl.SslContextFactory] x509=X509@cbc3bf3(validator,h=[localhost],a=[],w=[]) for Server@52d01430[provider=null,keyStore=file:///A:/github/Validator/keystore/validator.keystore,trustStore=file:///A:/github/Validator/keystore/truststore]
+INFO  [2024-06-05 20:59:35.015] [io.dropwizard.jetty.HttpsConnectorFactory] Enabled protocols: [TLSv1.2, TLSv1.3]
+INFO  [2024-06-05 20:59:35.016] [io.dropwizard.jetty.HttpsConnectorFactory] Disabled protocols: [SSLv2Hello, SSLv3, TLSv1, TLSv1.1]
+INFO  [2024-06-05 20:59:35.016] [io.dropwizard.jetty.HttpsConnectorFactory] Enabled cipher suites: [TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384, TLS_CHACHA20_POLY1305_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+INFO  [2024-06-05 20:59:35.016] [io.dropwizard.jetty.HttpsConnectorFactory] Disabled cipher suites: [TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_256_GCM_SHA384]
+INFO  [2024-06-05 20:59:35.395] [io.dropwizard.jersey.DropwizardResourceConfig] The following paths were found for the configured resources:
+
+    POST    /api/validator/v1/data/encrypt (com.microfocus.validator.resources.ConnectionService)
+    POST    /api/validator/v1/license/check (com.microfocus.validator.resources.LicenseEndPoints)
+    GET     /api/validator/v1/license/info (com.microfocus.validator.resources.LicenseEndPoints)
+    POST    /api/validator/v1/people (com.microfocus.validator.resources.PeopleResource)
+    DELETE  /api/validator/v1/people/me (com.microfocus.validator.resources.PeopleResource)
+    PUT     /api/validator/v1/people/me (com.microfocus.validator.resources.PeopleResource)
+    GET     /api/validator/v1/people/me/{name} (com.microfocus.validator.resources.PeopleResource)
+    GET     /api/validator/v1/reports/{filePath: .+} (com.microfocus.validator.resources.ReportService)
+    GET     /api/validator/v1/scheduler (com.microfocus.validator.resources.SchedulerEndpoints)
+    PUT     /api/validator/v1/scheduler (com.microfocus.validator.resources.SchedulerEndpoints)
+    GET     /api/validator/v1/scheduler/autostart (com.microfocus.validator.resources.SchedulerEndpoints)
+    PUT     /api/validator/v1/scheduler/autostart (com.microfocus.validator.resources.SchedulerEndpoints)
+    GET     /api/validator/v1/scheduler/notifier (com.microfocus.validator.resources.SchedulerEndpoints)
+    PUT     /api/validator/v1/scheduler/notifier (com.microfocus.validator.resources.SchedulerEndpoints)
+    GET     /api/validator/v1/scheduler/run/{scheduleId} (com.microfocus.validator.resources.SchedulerEndpoints)
+    DELETE  /api/validator/v1/scheduler/schedules (com.microfocus.validator.resources.SchedulerEndpoints)
+    GET     /api/validator/v1/scheduler/schedules (com.microfocus.validator.resources.SchedulerEndpoints)
+    POST    /api/validator/v1/scheduler/schedules (com.microfocus.validator.resources.SchedulerEndpoints)
+    GET     /api/validator/v1/scheduler/schedules/{id} (com.microfocus.validator.resources.SchedulerEndpoints)
+    PUT     /api/validator/v1/scheduler/schedules/{id} (com.microfocus.validator.resources.SchedulerEndpoints)
+    GET     /api/validator/v1/scheduler/smtp/send (com.microfocus.validator.resources.SchedulerEndpoints)
+    GET     /api/validator/v1/scheduler/start (com.microfocus.validator.resources.SchedulerEndpoints)
+    GET     /api/validator/v1/scheduler/status (com.microfocus.validator.resources.SchedulerEndpoints)
+    GET     /api/validator/v1/scheduler/stop (com.microfocus.validator.resources.SchedulerEndpoints)
+    GET     /api/validator/v1/schema (com.microfocus.validator.resources.ValidatorSchemaService)
+    GET     /api/validator/v1/swagger (io.federecio.dropwizard.swagger.SwaggerResource)
+    GET     /api/validator/v1/swagger.{type:json|yaml} (io.swagger.jaxrs.listing.ApiListingResource)
+    DELETE  /api/validator/v1/template (com.microfocus.validator.resources.ValidatorTemplateService)
+    GET     /api/validator/v1/template (com.microfocus.validator.resources.ValidatorTemplateService)
+    GET     /api/validator/v1/template/{id} (com.microfocus.validator.resources.ValidatorTemplateService)
+    POST    /api/validator/v1/template/{id} (com.microfocus.validator.resources.ValidatorTemplateService)
+    DELETE  /api/validator/v1/testsuite (com.microfocus.validator.resources.TestSuiteService)
+    GET     /api/validator/v1/testsuite (com.microfocus.validator.resources.TestSuiteService)
+    POST    /api/validator/v1/testsuite/{filePath: .+}/idmconnections (com.microfocus.validator.resources.ConnectionService)
+    DELETE  /api/validator/v1/testsuite/{filePath: .+}/log (com.microfocus.validator.resources.TestService)
+    GET     /api/validator/v1/testsuite/{filePath: .+}/log (com.microfocus.validator.resources.TestService)
+    GET     /api/validator/v1/testsuite/{filePath: .+}/{connectionId}/query (com.microfocus.validator.resources.ConnectionService)
+    GET     /api/validator/v1/testsuite/{filePath: .+}/{connectionid}/testconnection (com.microfocus.validator.resources.ConnectionService)
+    GET     /api/validator/v1/testsuite/{filePath: .+}/{enviroment}/run (com.microfocus.validator.resources.TestService)
+    GET     /api/validator/v1/testsuite/{filePath: .+}/{testId}/status (com.microfocus.validator.resources.TestService)
+    GET     /api/validator/v1/testsuite/{id} (com.microfocus.validator.resources.TestSuiteService)
+    POST    /api/validator/v1/testsuite/{id} (com.microfocus.validator.resources.TestSuiteService)
+    PUT     /api/validator/v1/testsuite/{id} (com.microfocus.validator.resources.TestSuiteService)
+    DELETE  /api/validator/v1/testsuite/{id}/connection (com.microfocus.validator.resources.ConnectionService)
+    POST    /api/validator/v1/testsuite/{id}/connection (com.microfocus.validator.resources.ConnectionService)
+    PUT     /api/validator/v1/testsuite/{id}/connection (com.microfocus.validator.resources.ConnectionService)
+    GET     /api/validator/v1/testsuite/{id}/connections (com.microfocus.validator.resources.ConnectionService)
+    GET     /api/validator/v1/testsuite/{id}/javascript (com.microfocus.validator.resources.ConnectionService)
+    PUT     /api/validator/v1/testsuite/{id}/javascript (com.microfocus.validator.resources.ConnectionService)
+    GET     /api/validator/v1/testsuite/{id}/runJavascript (com.microfocus.validator.resources.ConnectionService)
+    DELETE  /api/validator/v1/testsuite/{id}/tests (com.microfocus.validator.resources.TestService)
+    GET     /api/validator/v1/testsuite/{id}/tests (com.microfocus.validator.resources.TestService)
+    POST    /api/validator/v1/testsuite/{id}/tests (com.microfocus.validator.resources.TestService)
+    PUT     /api/validator/v1/testsuite/{id}/tests (com.microfocus.validator.resources.TestService)
+    GET     /api/validator/v1/testsuite/{id}/variables (com.microfocus.validator.resources.ConnectionService)
+    PUT     /api/validator/v1/testsuite/{id}/variables (com.microfocus.validator.resources.ConnectionService)
+    GET     /api/validator/v1/testsuite/{id}/{connectionid}/schema/classes (com.microfocus.validator.resources.ConnectionService)
+    GET     /api/validator/v1/testsuite/{id}/{connectionid}/schema/{classname}/attributes (com.microfocus.validator.resources.ConnectionService)
+    POST    /api/validator/v1/user/login (com.microfocus.validator.resources.SessionService)
+    GET     /api/validator/v1/user/logout (com.microfocus.validator.resources.SessionService)
+    POST    /api/validator/v1/ws/pollLogs (com.microfocus.validator.resources.LoggingServies)
+
+WARN  [2024-06-05 20:59:04.647] [org.glassfish.jersey.internal.Errors] The following warnings have been detected: WARNING: The (sub)resource method readScheduler in com.microfocus.validator.resources.SchedulerEndpoints contains empty path annotation.
+WARNING: The (sub)resource method writeScheduler in com.microfocus.validator.resources.SchedulerEndpoints contains empty path annotation.
+
+INFO  [2024-06-05 20:59:04.649] [org.eclipse.jetty.server.handler.ContextHandler] Started i.d.j.MutableServletContextHandler@29b2a94c{/,null,AVAILABLE}
+INFO  [2024-06-05 20:59:04.656] [io.dropwizard.setup.AdminEnvironment] tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2024-06-05 20:59:04.656] [org.eclipse.jetty.server.handler.ContextHandler] Started i.d.j.MutableServletContextHandler@73d7e7aa{/,null,AVAILABLE}
+INFO  [2024-06-05 20:59:04.673] [org.eclipse.jetty.server.AbstractConnector] Started application@7c460{SSL, (ssl, http/1.1)}{0.0.0.0:8380}
+INFO  [2024-06-05 20:59:04.676] [org.eclipse.jetty.server.AbstractConnector] Started admin@59e4a044{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+INFO  [2024-06-05 20:59:04.677] [org.eclipse.jetty.server.Server] Started @4063ms
+INFO  [2024-06-05 20:59:30.949] [org.eclipse.jetty.server.AbstractConnector] Stopped application@7c460{SSL, (ssl, http/1.1)}{0.0.0.0:8380}
+INFO  [2024-06-05 20:59:30.951] [org.eclipse.jetty.server.AbstractConnector] Stopped admin@59e4a044{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+INFO  [2024-06-05 20:59:30.951] [org.eclipse.jetty.server.handler.ContextHandler] Stopped i.d.j.MutableServletContextHandler@73d7e7aa{/,null,STOPPED}
+INFO  [2024-06-05 20:59:30.954] [org.eclipse.jetty.server.handler.ContextHandler] Stopped i.d.j.MutableServletContextHandler@29b2a94c{/,null,STOPPED}
+INFO  [2024-06-05 20:59:33.110] [org.eclipse.jetty.util.log] Logging initialized @1143ms to org.eclipse.jetty.util.log.Slf4jLog
+INFO  [2024-06-05 20:59:33.151] [io.dropwizard.server.DefaultServerFactory] Registering jersey handler with root path prefix: /
+INFO  [2024-06-05 20:59:33.152] [io.dropwizard.server.DefaultServerFactory] Registering admin handler with root path prefix: /
+INFO  [2024-06-05 20:59:33.154] [io.dropwizard.assets.AssetsBundle] Registering AssetBundle with name: swagger-assets for path /api/validator/v1/swagger-static/*
+INFO  [2024-06-05 20:59:33.154] [io.dropwizard.assets.AssetsBundle] Registering AssetBundle with name: swagger-oauth2-connect for path /api/validator/v1/oauth2-redirect.html/*
+INFO  [2024-06-05 20:59:33.233] [org.reflections.Reflections] Reflections took 61 ms to scan 1 urls, producing 38 keys and 66 values 
+INFO  [2024-06-05 20:59:33.562] [io.dropwizard.assets.AssetsBundle] Registering AssetBundle with name: assets for path /validator/*
+INFO  [2024-06-05 20:59:33.726] [org.hibernate.Version] HHH000412: Hibernate ORM core version 2.0.1.0100-SNAPSHOT
+INFO  [2024-06-05 20:59:33.791] [io.dropwizard.hibernate.SessionFactoryFactory] Entity classes: [com.microfocus.validator.jdbc.model.User]
+INFO  [2024-06-05 20:59:33.810] [org.hibernate.annotations.common.Version] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+INFO  [2024-06-05 20:59:34.065] [org.hibernate.dialect.Dialect] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+INFO  [2024-06-05 20:59:34.710] [org.hibernate.engine.internal.StatisticalLoggingSessionEventListener] Session Metrics {
+    47300 nanoseconds spent acquiring 1 JDBC connections;
+    27300 nanoseconds spent releasing 1 JDBC connections;
+    6605500 nanoseconds spent preparing 1 JDBC statements;
+    555800 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    13219000 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    17100 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+INFO  [2024-06-05 20:59:34.866] [io.dropwizard.server.ServerFactory] Starting Validator
+            
+ \ \ / /  __ _  | | (_)  __| |  __ _  | |_   ___   _ _ 
+  \ V /  / _` | | | | | / _` | / _` | |  _| / _ \ | '_|
+   \_/   \__,_| |_| |_| \__,_| \__,_|  \__| \___/ |_| 
+INFO  [2024-06-05 20:59:34.928] [org.eclipse.jetty.setuid.SetUIDListener] Opened application@31fc658f{SSL, (ssl, http/1.1)}{0.0.0.0:8380}
+INFO  [2024-06-05 20:59:34.928] [org.eclipse.jetty.setuid.SetUIDListener] Opened admin@60d32006{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+INFO  [2024-06-05 20:59:34.954] [io.dropwizard.websockets.WebsocketBundle] Registering websocket endpoints: 
+
+    WS      /api/socket/{projectId} (com.microfocus.validator.resources.WebsocketServerEndpoint)
+
+INFO  [2024-06-05 20:59:34.956] [org.eclipse.jetty.server.Server] jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 11.0.20.1+1
+INFO  [2024-06-05 20:59:34.978] [org.eclipse.jetty.util.ssl.SslContextFactory] x509=X509@cbc3bf3(validator,h=[localhost],a=[],w=[]) for Server@52d01430[provider=null,keyStore=file:///A:/github/Validator/keystore/validator.keystore,trustStore=file:///A:/github/Validator/keystore/truststore]
+INFO  [2024-06-05 20:59:35.015] [io.dropwizard.jetty.HttpsConnectorFactory] Enabled protocols: [TLSv1.2, TLSv1.3]
+INFO  [2024-06-05 20:59:35.016] [io.dropwizard.jetty.HttpsConnectorFactory] Disabled protocols: [SSLv2Hello, SSLv3, TLSv1, TLSv1.1]
+INFO  [2024-06-05 20:59:35.016] [io.dropwizard.jetty.HttpsConnectorFactory] Enabled cipher suites: [TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384, TLS_CHACHA20_POLY1305_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+INFO  [2024-06-05 20:59:35.016] [io.dropwizard.jetty.HttpsConnectorFactory] Disabled cipher suites: [TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_256_GCM_SHA384]
+INFO  [2024-06-05 20:59:35.395] [io.dropwizard.jersey.DropwizardResourceConfig] The following paths were found for the configured resources:
+
+    POST    /api/validator/v1/data/encrypt (com.microfocus.validator.resources.ConnectionService)
+    POST    /api/validator/v1/license/check (com.microfocus.validator.resources.LicenseEndPoints)
+    GET     /api/validator/v1/license/info (com.microfocus.validator.resources.LicenseEndPoints)
+    POST    /api/validator/v1/people (com.microfocus.validator.resources.PeopleResource)
+    DELETE  /api/validator/v1/people/me (com.microfocus.validator.resources.PeopleResource)
+    PUT     /api/validator/v1/people/me (com.microfocus.validator.resources.PeopleResource)
+    GET     /api/validator/v1/people/me/{name} (com.microfocus.validator.resources.PeopleResource)
+    GET     /api/validator/v1/reports/{filePath: .+} (com.microfocus.validator.resources.ReportService)
+    GET     /api/validator/v1/scheduler (com.microfocus.validator.resources.SchedulerEndpoints)
+    PUT     /api/validator/v1/scheduler (com.microfocus.validator.resources.SchedulerEndpoints)
+    GET     /api/validator/v1/scheduler/autostart (com.microfocus.validator.resources.SchedulerEndpoints)
+    PUT     /api/validator/v1/scheduler/autostart (com.microfocus.validator.resources.SchedulerEndpoints)
+    GET     /api/validator/v1/scheduler/notifier (com.microfocus.validator.resources.SchedulerEndpoints)
+    PUT     /api/validator/v1/scheduler/notifier (com.microfocus.validator.resources.SchedulerEndpoints)
+    GET     /api/validator/v1/scheduler/run/{scheduleId} (com.microfocus.validator.resources.SchedulerEndpoints)
+    DELETE  /api/validator/v1/scheduler/schedules (com.microfocus.validator.resources.SchedulerEndpoints)
+    GET     /api/validator/v1/scheduler/schedules (com.microfocus.validator.resources.SchedulerEndpoints)
+    POST    /api/validator/v1/scheduler/schedules (com.microfocus.validator.resources.SchedulerEndpoints)
+    GET     /api/validator/v1/scheduler/schedules/{id} (com.microfocus.validator.resources.SchedulerEndpoints)
+    PUT     /api/validator/v1/scheduler/schedules/{id} (com.microfocus.validator.resources.SchedulerEndpoints)
+    GET     /api/validator/v1/scheduler/smtp/send (com.microfocus.validator.resources.SchedulerEndpoints)
+    GET     /api/validator/v1/scheduler/start (com.microfocus.validator.resources.SchedulerEndpoints)
+    GET     /api/validator/v1/scheduler/status (com.microfocus.validator.resources.SchedulerEndpoints)
+    GET     /api/validator/v1/scheduler/stop (com.microfocus.validator.resources.SchedulerEndpoints)
+    GET     /api/validator/v1/schema (com.microfocus.validator.resources.ValidatorSchemaService)
+    GET     /api/validator/v1/swagger (io.federecio.dropwizard.swagger.SwaggerResource)
+    GET     /api/validator/v1/swagger.{type:json|yaml} (io.swagger.jaxrs.listing.ApiListingResource)
+    DELETE  /api/validator/v1/template (com.microfocus.validator.resources.ValidatorTemplateService)
+    GET     /api/validator/v1/template (com.microfocus.validator.resources.ValidatorTemplateService)
+    GET     /api/validator/v1/template/{id} (com.microfocus.validator.resources.ValidatorTemplateService)
+    POST    /api/validator/v1/template/{id} (com.microfocus.validator.resources.ValidatorTemplateService)
+    DELETE  /api/validator/v1/testsuite (com.microfocus.validator.resources.TestSuiteService)
+    GET     /api/validator/v1/testsuite (com.microfocus.validator.resources.TestSuiteService)
+    POST    /api/validator/v1/testsuite/{filePath: .+}/idmconnections (com.microfocus.validator.resources.ConnectionService)
+    DELETE  /api/validator/v1/testsuite/{filePath: .+}/log (com.microfocus.validator.resources.TestService)
+    GET     /api/validator/v1/testsuite/{filePath: .+}/log (com.microfocus.validator.resources.TestService)
+    GET     /api/validator/v1/testsuite/{filePath: .+}/{connectionId}/query (com.microfocus.validator.resources.ConnectionService)
+    GET     /api/validator/v1/testsuite/{filePath: .+}/{connectionid}/testconnection (com.microfocus.validator.resources.ConnectionService)
+    GET     /api/validator/v1/testsuite/{filePath: .+}/{enviroment}/run (com.microfocus.validator.resources.TestService)
+    GET     /api/validator/v1/testsuite/{filePath: .+}/{testId}/status (com.microfocus.validator.resources.TestService)
+    GET     /api/validator/v1/testsuite/{id} (com.microfocus.validator.resources.TestSuiteService)
+    POST    /api/validator/v1/testsuite/{id} (com.microfocus.validator.resources.TestSuiteService)
+    PUT     /api/validator/v1/testsuite/{id} (com.microfocus.validator.resources.TestSuiteService)
+    DELETE  /api/validator/v1/testsuite/{id}/connection (com.microfocus.validator.resources.ConnectionService)
+    POST    /api/validator/v1/testsuite/{id}/connection (com.microfocus.validator.resources.ConnectionService)
+    PUT     /api/validator/v1/testsuite/{id}/connection (com.microfocus.validator.resources.ConnectionService)
+    GET     /api/validator/v1/testsuite/{id}/connections (com.microfocus.validator.resources.ConnectionService)
+    GET     /api/validator/v1/testsuite/{id}/javascript (com.microfocus.validator.resources.ConnectionService)
+    PUT     /api/validator/v1/testsuite/{id}/javascript (com.microfocus.validator.resources.ConnectionService)
+    GET     /api/validator/v1/testsuite/{id}/runJavascript (com.microfocus.validator.resources.ConnectionService)
+    DELETE  /api/validator/v1/testsuite/{id}/tests (com.microfocus.validator.resources.TestService)
+    GET     /api/validator/v1/testsuite/{id}/tests (com.microfocus.validator.resources.TestService)
+    POST    /api/validator/v1/testsuite/{id}/tests (com.microfocus.validator.resources.TestService)
+    PUT     /api/validator/v1/testsuite/{id}/tests (com.microfocus.validator.resources.TestService)
+    GET     /api/validator/v1/testsuite/{id}/variables (com.microfocus.validator.resources.ConnectionService)
+    PUT     /api/validator/v1/testsuite/{id}/variables (com.microfocus.validator.resources.ConnectionService)
+    GET     /api/validator/v1/testsuite/{id}/{connectionid}/schema/classes (com.microfocus.validator.resources.ConnectionService)
+    GET     /api/validator/v1/testsuite/{id}/{connectionid}/schema/{classname}/attributes (com.microfocus.validator.resources.ConnectionService)
+    POST    /api/validator/v1/user/login (com.microfocus.validator.resources.SessionService)
+    GET     /api/validator/v1/user/logout (com.microfocus.validator.resources.SessionService)
+    POST    /api/validator/v1/ws/pollLogs (com.microfocus.validator.resources.LoggingServies)
+
